@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b160f7bbaf.js" crossorigin="anonymous"></script>
+    <title>Beer projekt</title>
+</head>
+<body>
+    <header>
+        <h1>Beer Project</h1>
+        <nav>
+            <a id="home" href="#">Home</a>
+            <a id="search" href="#">Search</a>
+        </nav>
+    </header>
+    <main>
+        <section class="home active">
+            <div class="card home-card active">
+                <div class="img-container-home">
+                    <img class="beer-img home-img" src="https://images.punkapi.com/v2/192.png" alt="">
+                </div>
+                <h2 class="beer-name">Name Beer</h2>
+                <p class="tagline"></p>
+                <a class="more-info-button" href="#">More info</a>
+                <button class="random-button">random Beer</button>
+            </div>
+
+            <div class="card info-card">
+                <div class="img-container">
+                    <img class="beer-img info-img" src="https://images.punkapi.com/v2/192.png" alt="">
+                </div>
+                <div class="description">
+                    <h3 class="beer-name info-name">Beer Name</h3>
+                    <div class="description-text"></div>
+                </div>
+                <div class="brewers-tips">
+                    <h3>Brewers Tips</h3>
+                    <div class="brewers-tips-text"></div>
+                </div>
+                <div class="food-pairing">
+                    <h3>Food to enjoy with</h3>
+                    <ul class="food-pairing-list"></ul>
+                </div>
+                <a class="less-info-button" href="#">Less info</a>
+                <ul class="info-list"></ul>
+            </div>
+        </section>
+
+        <section class="search">
+            <div class="form active">
+                <label for="b-name">Beer name:</label>
+                <input type="text" id="beer_name" minlength="3" name="beer_name" placeholder=" Write a beer name">
+                <p class="form-message hidden"><i class="fas fa-exclamation-triangle"></i><b>Error:</b> You need at least three characters, try again!</p>
+                <p class="form-message-1 hidden"><i class="fas fa-exclamation-triangle"></i><b>Error:</b> We have not found any beer with that name, try again!</p>
+                <button class="search-button">Search</button>
+            </div>    
+            <div class="search-card active">
+                <div class="search-card-left">
+                        <h4>SEARCH RESULT</h4>
+                    <div class="fel-mess hidden">
+                        <p><i class="fas fa-exclamation-triangle"></i>No more results</p>
+                    </div>
+                    <div class="search-beer-list"></div>
+                    <div class="pagination">
+                        <div class="pages">
+                            <div class="prev">
+                                <i class="fas fa-caret-left"></i>
+                                <p class="next-prev">previous</p>
+                            </div>
+                            <div class="next">
+                                <p class="next-prev">next</p>
+                                <i class="fas fa-caret-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-card-right">
+                    <h4>BEER INFORMATION</h4>
+                <div class="img-card-info">
+                    <img class="img-info" src="" alt="">
+                </div>
+                <div class="search-info">
+                    <h2 class="name-info"></h2>
+                    <div class="description-info"></div>
+                </div>
+                <a class="info-button hidden" href="#">More info</a>
+                </div>      
+            </div>
+
+            <div class="card info-card">
+                <div class="img-container">
+                    <img class="beer-img info-img" src="https://images.punkapi.com/v2/192.png" alt="">
+                </div>
+                <div class="description">
+                    <h3 class="beer-name info-name">Beer Name</h3>
+                    <div class="description-text"></div>
+                </div>
+                <div class="brewers-tips">
+                    <h3>Brewers Tips</h3>
+                    <div class="brewers-tips-text"></div>
+                </div>
+                <div class="food-pairing">
+                    <h3>Food to enjoy with</h3>
+                    <ul class="food-pairing-list"></ul>
+                </div>
+                <a class="less-info-button" href="#">Less info</a>
+                <ul class="info-list"></ul>
+            </div>
+
+            </div>            
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
